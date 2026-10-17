@@ -324,4 +324,101 @@ renderGames();
     </div>
 </div>
 
-  
+  <style>
+.download-lock-box {
+    background: linear-gradient(135deg, #1e1e2f, #12121a);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid #2a2a40;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.download-lock-box h3 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+.lock-step {
+    background: #161622;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #3a3a5c;
+}
+.lock-btn {
+    background: #00ffcc;
+    color: #0f1016;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.final-download-btn {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: not-allowed;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+.final-download-btn.unlocked {
+    background: linear-gradient(135deg, #00ffcc, #00b386);
+    color: #0f1016;
+    cursor: pointer;
+}
+</style>
+
+<div class="download-lock-box">
+    <h3>📥 Pakua Faili la Mchezo</h3>
+    <p style="font-size: 13px; color: #a0a0c0;">Kamilisha hatua hizi ili kufungua kitufe cha kudownload:</p>
+    
+    <div class="lock-step">
+        <span>1. Follow WhatsApp Channel</span>
+        <a href="https://whatsapp.com/channel/0029VbD5r5PK5cDCoJgAKC0C" target="_blank" class="lock-btn" onclick="unlockStep('wa')">Follow</a>
+    </div>
+    
+    <div class="lock-step">
+        <span>2. Subscribe YouTube Channel</span>
+        <a href="https://youtube.com/@adrianoevara?si=DLzD8D8RhuMPs6Wn" target="_blank" class="lock-btn" onclick="unlockStep('yt')">Subscribe</a>
+    </div>
+
+    <button id="downloadBtn" class="final-download-btn" disabled onclick="downloadGame()">Lango Limefungwa 🔒</button>
+</div>
+
+<script>
+let waDone = false;
+let ytDone = false;
+
+function unlockStep(platform) {
+    if(platform === 'wa') waDone = true;
+    if(platform === 'yt') ytDone = true;
+    
+    if(waDone && ytDone) {
+        let btn = document.getElementById('downloadBtn');
+        btn.disabled = false;
+        btn.classList.add('unlocked');
+        btn.innerText = "KIDHIBITI KIMEWASHWA - DOWNLOAD SASA 🚀";
+    }
+}
+
+function downloadGame() {
+    if(waDone && ytDone) {
+        // Hapa utabadilisha na kuweka link halisi ya faili la mchezo wako ukiwa tayari (mfano MediaFire link)
+        window.location.href = "WEKA_LINK_YA_DOWNLOAD_YA_GAME_HAPA";
+    } else {
+        alert("Tafadhali kwanza kamilisha kufuata WhatsApp na YouTube!");
+    }
+}
+  </script>
+                                 
