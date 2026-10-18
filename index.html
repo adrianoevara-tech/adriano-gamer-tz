@@ -254,3 +254,83 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriano Gamer TZ - Login / Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        h2 { text-align: center; color: #ff4757; }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background: #2f2f2f;
+            color: #fff;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ff4757;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover { background: #ff6b81; }
+        .toggle-btn {
+            background: transparent;
+            color: #70a1ff;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 id="form-title">Ingia (Login)</h2>
+        
+        <input type="email" id="email" placeholder="Weka Barua Pepe (Email)" required>
+        <input type="password" id="password" placeholder="Neno la Siri (Password)" required>
+        
+        <button id="action-btn" onclick="handleAuth()">Weka Ndani / Ingia</button>
+        <button class="toggle-btn" onclick="toggleMode()">Hauna akaunti? Jisajili hapa</button>
+        
+        <p id="message" style="text-align:center; font-size: 14px; margin-top: 10px;"></p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.x.x/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.x.x/firebase-auth.js";
+
+        // Zile code zako za Firebase ulizoweka awali zitafanya kazi hapa
+        // Hakikisha firebaseConfig yako ipo hapa chini au imeshakaa vizuiri kwenye faili lako
+    </script>
+
+</body>
+</html>
