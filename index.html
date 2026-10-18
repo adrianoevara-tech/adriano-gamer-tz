@@ -1,1 +1,234 @@
 
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101014">
+<title>ADRIANO GAMER TZ</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#0c0c10;color:#fff;
+ font-family:Arial,sans-serif
+}
+header{
+ background:#e50914;padding:23px 15px;text-align:center
+}
+header h1{font-size:26px;margin:0}
+header p{font-size:12px;letter-spacing:2px;margin:8px 0 0}
+nav{
+ display:flex;gap:20px;overflow-x:auto;white-space:nowrap;
+ background:#19191f;padding:15px
+}
+nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:bold}
+.hero{
+ padding:38px 18px;
+ background:linear-gradient(135deg,#360707,#17171c);
+ text-align:center
+}
+.hero .tag{color:#ff5555;font-weight:bold;font-size:12px}
+.hero h2{font-size:29px;margin:12px 0}
+.hero p{color:#ccc;line-height:1.7;font-size:14px}
+.wrap{max-width:800px;margin:auto;padding:16px}
+.section-title{
+ border-left:4px solid #e50914;padding-left:10px;
+ font-size:20px;margin-top:28px
+}
+.panel{
+ background:#19191f;border:1px solid #303038;
+ border-radius:13px;padding:18px;margin:16px 0
+}
+.grid{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:12px
+}
+.category{
+ background:#202027;border:1px solid #363640;
+ padding:19px 9px;border-radius:11px;text-align:center
+}
+.category .emoji{font-size:30px}
+.category h3{font-size:14px;margin:10px 0 5px}
+.category p{font-size:11px;color:#aaa;margin:0}
+.trend{
+ min-height:115px;border:1px dashed #555;
+ border-radius:11px;display:flex;align-items:center;
+ justify-content:center;text-align:center;padding:15px;
+ background:#141419;color:#aaa;font-size:13px;line-height:1.7
+}
+.btn{
+ display:block;text-align:center;padding:14px;
+ border-radius:8px;margin-top:12px;
+ text-decoration:none;color:#fff;font-weight:bold;
+ border:0;width:100%;font-size:14px;cursor:pointer
+}
+.red{background:#e50914}
+.green{background:#087c48}
+.blue{background:#174d99}
+.dark{background:#303039}
+input{
+ width:100%;padding:13px;margin:8px 0;
+ background:#101014;border:1px solid #45454d;
+ border-radius:8px;color:#fff;font-size:15px
+}
+.small{color:#bdbdc5;font-size:13px;line-height:1.7}
+footer{
+ text-align:center;background:#19191f;padding:25px 15px;
+ color:#aaa;font-size:13px;margin-top:25px
+}
+footer strong{color:#fff}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+<h1>🎮 ADRIANO GAMER TZ</h1>
+<p>YOUR GAMING WORLD</p>
+</header>
+
+<nav>
+<a href="#home">HOME</a>
+<a href="#trending">TRENDING</a>
+<a href="#categories">CATEGORIES</a>
+<a href="#account">ACCOUNT</a>
+<a href="#paid">PAID GAMES</a>
+<a href="#contact">CONTACT</a>
+</nav>
+
+<section class="hero">
+<span class="tag">WELCOME TO OUR GAMING COMMUNITY</span>
+<h2>LEVEL UP YOUR GAME!</h2>
+<p>
+Karibu ADRIANO GAMER TZ — sehemu yako ya kupata
+taarifa za games, game categories na updates mpya.
+Tunakukaribisha kwenye jamii yetu ya gamers!
+</p>
+<a class="btn red" href="#categories">EXPLORE CATEGORIES ↓</a>
+</section>
+
+<main class="wrap">
+
+<section id="trending">
+<h2 class="section-title">🔥 TRENDING GAMES</h2>
+<div class="trend">
+Eneo la Trending Games<br>
+Picha na majina ya games zitaongezwa hapa baadaye.
+</div>
+</section>
+
+<section id="categories">
+<h2 class="section-title">🎮 GAME CATEGORIES</h2>
+<p class="small">Chagua kundi unalotaka kutembelea.</p>
+
+<div class="grid">
+<div class="category">
+<div class="emoji">📱</div>
+<h3>ANDROID GAMES</h3>
+<p>Android game library</p>
+</div>
+<div class="category">
+<div class="emoji">🕹️</div>
+<h3>PSP GAMES</h3>
+<p>PSP game library</p>
+</div>
+<div class="category">
+<div class="emoji">⚽</div>
+<h3>FOOTBALL GAMES</h3>
+<p>Football collection</p>
+</div>
+<div class="category">
+<div class="emoji">💥</div>
+<h3>ACTION GAMES</h3>
+<p>Action collection</p>
+</div>
+<div class="category">
+<div class="emoji">💎</div>
+<h3>PAID GAMES</h3>
+<p>Paid game section</p>
+</div>
+<div class="category">
+<div class="emoji">🆕</div>
+<h3>NEW UPDATES</h3>
+<p>Latest additions</p>
+</div>
+</div>
+</section>
+
+<section id="account">
+<h2 class="section-title">🔐 USER ACCOUNT</h2>
+<div class="panel">
+<h3>Karibu, Gamer!</h3>
+<p class="small">
+Sehemu ya akaunti za watumiaji. Mfumo halisi wa login
+utaunganishwa baadaye ili kuhifadhi akaunti kwa usalama.
+</p>
+<button class="btn dark" onclick="accountInfo()">
+ACCOUNT LOGIN — COMING SOON
+</button>
+<p id="accountMessage" class="small"></p>
+</div>
+</section>
+
+<section id="paid">
+<h2 class="section-title">💳 PAID GAMES</h2>
+<div class="panel">
+<h3>Premium Gaming Zone</h3>
+<p class="small">
+Eneo hili litatumika kwa games za kulipia.
+Mfumo wa malipo na uthibitisho wa muamala utaunganishwa
+baadaye kabla ya kutoa downloads.
+</p>
+<p>Kwa maelekezo: 0799 697 998</p>
+<p class="small">
+Hakuna malipo yanayopokelewa kupitia ukurasa huu kwa sasa.
+</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">📢 JOIN OUR COMMUNITY</h2>
+<div class="panel">
+<p class="small">
+Support yako ndiyo kipaumbele chetu! Jiunge na community
+yetu na utusaidie kukua. Ahsante kwa support yako.
+</p>
+
+<a class="btn green"
+href="https://whatsapp.com/channel/0029VbD5r5PK5cDCoJgAKC0C"
+target="_blank" rel="noopener">
+FOLLOW WHATSAPP CHANNEL
+</a>
+
+<a class="btn blue"
+href="https://youtube.com/@adrianoevara?si=DLzD8D8RhuMPs6Wn"
+target="_blank" rel="noopener">
+SUBSCRIBE YOUTUBE CHANNEL
+</a>
+
+<p class="small">
+Kwa maelekezo zaidi, wasiliana nasi kwa simu:
+<strong>0799 697 998</strong>
+</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>Asante kwa kutembelea ADRIANO GAMER TZ ❤️</p>
+<p><strong>BY ADRIANO GAMER TZ</strong></p>
+</footer>
+
+<script>
+function accountInfo(){
+ document.getElementById("accountMessage").textContent =
+ "Mfumo salama wa akaunti utaongezwa katika hatua inayofuata.";
+}
+</script>
+
+</body>
+  </html>
+  
