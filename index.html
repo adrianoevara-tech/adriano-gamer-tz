@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADRIANO GAMER TZ - YOUR GAMING WORLD</title>
+    <style>
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #ff1e1e, #800000);
+            text-align: center;
+            padding: 25px 15px;
+            box-shadow: 0 4px 15px rgba(255, 30, 30, 0.4);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #ffcccc;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        .card {
+            background: #161616;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        h2 { color: #ff1e1e; border-bottom: 2px solid #ff1e1e; padding-bottom: 8px; margin-top: 0; }
+        
+        .btn-wa {
+            display: block;
+            background: #25D366;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            transition: 0.2s;
+        }
+        .btn-wa:hover { background: #20ba5a; }
 
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .cat-box {
+            background: #222;
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .cat-box:hover {
+            background: #ff1e1e;
+            border-color: #ff1e1e;
+            transform: translateY(-5px);
+        }
+        .cat-box h3 { margin: 10px 0 0 0; font-size: 17px; }
+
+        .empty-placeholder {
+            background: #1f1f1f;
+            border: 2px dashed #444;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            color: #888;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            color: #ff1e1e;
+            font-weight: bold;
+            border-top: 1px solid #222;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 ADRIANO GAMER TZ</h1>
+        <p>YOUR ULTIMATE GAMING WORLD</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 1. MAELEKEZO YA WEBSITE NA NAMBA YA SIMU -->
+        <div class="card">
+            <h2>Kuhusu Sisi & Mawasiliano</h2>
+            <p>Karibu kwenye tovuti rasmi ya <b>ADRIANO GAMER TZ</b>. Hapa ndipo mahali pake salama pa kupata magem bora kabisa ya APK, OBB, Data, na PSP ISO kwa ajili ya simu yako. Hakuna kuchezea ndani ya tovuti — download faili lako moja kwa moja ukacheze nje kwa uhuru!</p>
+            <p><b>Namba ya Mawasiliano kwa Msaada Zaidi:</b> <span style="color: #2ed573; font-size: 16px; font-weight: bold;">0799 697 998</span></p>
+            
+            <!-- Kitufe cha WhatsApp Chaneli -->
+            <a href="https://whatsapp.com/channel/0029VbD5r5PK5cDCoJgAKC0C" target="_blank" class="btn-wa">
+                📢 USISAHAU KUFOLLOW CHANEL YA WHATSAPP KUPATA UPDATES
+            </a>
+        </div>
+
+        <!-- 2. MAKUNDI 4 KUU YA GAMES -->
+        <div class="card">
+            <h2>Game Categories (Chagua Kundi Lako)</h2>
+            <p>Gusa kundi lolote hapa chini ili kwenda kwenye eneo lake:</p>
+            
+            <div class="categories-grid">
+                <a href="#psp-section" class="cat-box">
+                    <span style="font-size: 28px;">🎮</span>
+                    <h3>PSP GAMES</h3>
+                </a>
+                <a href="#android-section" class="cat-box">
+                    <span style="font-size: 28px;">📱</span>
+                    <h3>ANDROID GAMES</h3>
+                </a>
+                <a href="#football-section" class="cat-box">
+                    <span style="font-size: 28px;">⚽</span>
+                    <h3>FOOTBALL GAMES</h3>
+                </a>
+                <a href="#action-section" class="cat-box">
+                    <span style="font-size: 28px;">💥</span>
+                    <h3>ACTION GAMES</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- 3. ENEO LA PSP GAMES (BADO LIPO WAZI) -->
+        <div id="psp-section" class="card">
+            <h2>🎮 PSP Games Collection</h2>
+            <p>Magem ya PSP yenye ubora wa hali ya juu kwa ajili ya PPSSPP Emulator.</p>
+            <div class="empty-placeholder">
+                Hapa hakuna game bado. Utaweka magem yako ya PSP hapa baadaye!
+            </div>
+        </div>
+
+        <!-- 4. ENEO LA ANDROID GAMES -->
+        <div id="android-section" class="card">
+            <h2>📱 Android Games (APK + OBB)</h2>
+            <p>Magem maalum ya simu za Android yakiwa na faili zake kamili.</p>
+            <div class="empty-placeholder">
+                Hapa hakuna game bado. Utaweka magem yako ya Android hapa baadaye!
+            </div>
+        </div>
+
+        <!-- 5. ENEO LA FOOTBALL GAMES -->
+        <div id="football-section" class="card">
+            <h2>⚽ Football Games</h2>
+            <p>Magem ya mpira wa miguu (EAFC, PES, DLS).</p>
+            <div class="empty-placeholder">
+                Hapa hakuna game bado. Utaweka magem yako ya Football hapa baadaye!
+            </div>
+        </div>
+
+        <!-- 6. ENEO LA ACTION GAMES -->
+        <div id="action-section" class="card">
+            <h2>💥 Action Games</h2>
+            <p>Magem yenye visa vizito, vita, na open world.</p>
+            <div class="empty-placeholder">
+                Hapa hakuna game bado. Utaweka magem yako ya Action hapa baadaye!
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Asante kwa kutembelea ADRIANO GAMER TZ ❤️<br>
+        BY ADRIANO GAMER TZ
+    </footer>
+
+</body>
+  </html>
+  
