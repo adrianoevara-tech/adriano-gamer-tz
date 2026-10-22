@@ -1,1 +1,325 @@
 
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="ADRIANO DR GAMING TZ - Dunia ya michezo ya PSP, FIFA na Android.">
+  <title>ADRIANO DR GAMING TZ</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080b14;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 18px 16px;
+      background: #101629;
+      border-bottom: 1px solid #252e45;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .logo {
+      font-size: 17px;
+      font-weight: 900;
+      color: #00eaff;
+    }
+
+    .logo span {
+      color: #ffffff;
+    }
+
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #173d65 0%, #101629 45%, #080b14 85%);
+    }
+
+    .tag {
+      display: inline-block;
+      color: #00eaff;
+      border: 1px solid #00eaff;
+      border-radius: 30px;
+      padding: 7px 13px;
+      font-size: 12px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 8vw, 54px);
+      line-height: 1.12;
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: #00eaff;
+    }
+
+    .hero p {
+      max-width: 450px;
+      margin: auto;
+      color: #b9c4d8;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .main-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 22px;
+      background: #00eaff;
+      color: #080b14;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 35px 16px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .sub {
+      color: #9eacc4;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .category {
+      background: #111a2d;
+      border: 1px solid #293751;
+      color: white;
+      padding: 20px 8px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .category:active,
+    .category.active {
+      border-color: #00eaff;
+      background: #123047;
+      color: #00eaff;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .game {
+      padding: 17px 12px;
+      background: #111a2d;
+      border: 1px solid #293751;
+      border-radius: 12px;
+      min-width: 0;
+    }
+
+    .game-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .game h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    .game p {
+      color: #9eacc4;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .about {
+      background: #101629;
+      border: 1px solid #293751;
+      padding: 22px;
+      border-radius: 14px;
+      line-height: 1.9;
+      color: #c2cee0;
+    }
+
+    .about strong {
+      color: #00eaff;
+    }
+
+    footer {
+      margin-top: 25px;
+      padding: 28px 15px;
+      text-align: center;
+      border-top: 1px solid #293751;
+      color: #9eacc4;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    footer a {
+      color: #00eaff;
+      text-decoration: none;
+    }
+
+    @media (min-width: 650px) {
+      .categories {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .games {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">ADRIANO <span>DR GAMING</span></div>
+    <div>🎮 TZ</div>
+  </header>
+
+  <section class="hero">
+    <div class="tag">WELCOME TO MY GAMING WORLD</div>
+    <h1>ADRIANO<br><span>DR GAMING TZ</span></h1>
+    <p>
+      Karibu kwenye dunia ya gaming! Gundua michezo ya PSP,
+      FIFA, Android na michezo mingine hapa.
+    </p>
+    <a class="main-button" href="#categories">🎮 GUNDUA GAMES</a>
+  </section>
+
+  <main>
+    <section class="section" id="categories">
+      <h2 class="section-title">GAME CATEGORIES</h2>
+      <p class="sub">Chagua category unayotaka kuangalia.</p>
+
+      <div class="categories">
+        <button class="category active" data-category="PSP">🎮 PSP</button>
+        <button class="category" data-category="FIFA">⚽ FIFA</button>
+        <button class="category" data-category="ACTION">🔥 ACTION</button>
+        <button class="category" data-category="ZA KULIPIA">💎 ZA KULIPIA</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="games-title">Michezo ya PSP</h2>
+      <p class="sub">Michezo itabadilika unapochagua category.</p>
+      <div class="games" id="games-list"></div>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="section-title">KUHUSU MIMI</h2>
+      <p class="sub">Adriano DR Gaming TZ</p>
+
+      <div class="about">
+        Mimi ni <strong>Adriano</strong>, na hii ni website yangu
+        maalumu kwa ajili ya gaming. Hapa nitakuwa naweka taarifa,
+        majina na machaguo ya michezo mbalimbali ya PSP, FIFA,
+        Android na Action.
+
+        <br><br>
+        Lengo langu ni kuwapa gamers sehemu rahisi ya kugundua
+        michezo wanayoipenda. Karibu kwenye familia ya
+        <strong>ADRIANO DR GAMING TZ!</strong>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>ADRIANO DR GAMING TZ</strong><br>
+    Mawasiliano: <a href="tel:0799697998">0799 697 998</a><br>
+    © <span id="year"></span> Adriano DR Gaming TZ
+  </footer>
+
+  <script>
+    const games = {
+      "PSP": [
+        { name: "GTA Vice City Stories", icon: "🚘", info: "PSP • Action Adventure" },
+        { name: "God of War", icon: "⚔️", info: "PSP • Adventure" },
+        { name: "Tekken 6", icon: "🥊", info: "PSP • Fighting" },
+        { name: "PES 2024 Mod", icon: "⚽", info: "PSP • Football" }
+      ],
+      "FIFA": [
+        { name: "FIFA Football", icon: "⚽", info: "Football • FIFA series" },
+        { name: "EA SPORTS FC", icon: "🏆", info: "Football • Android" }
+      ],
+      "ACTION": [
+        { name: "GTA Series", icon: "🚗", info: "Action • Adventure" },
+        { name: "Action Games", icon: "🔥", info: "Explore action games" }
+      ],
+      "ZA KULIPIA": [
+        { name: "Premium Games", icon: "💎", info: "Taarifa za michezo ya kulipia" },
+        { name: "Game Collection", icon: "🎮", info: "Orodha ya michezo premium" }
+      ]
+    };
+
+    const buttons = document.querySelectorAll(".category");
+    const list = document.getElementById("games-list");
+    const title = document.getElementById("games-title");
+
+    function showGames(category) {
+      title.textContent = "Michezo ya " + category;
+      list.innerHTML = "";
+
+      games[category].forEach(game => {
+        const card = document.createElement("article");
+        card.className = "game";
+        card.innerHTML = `
+          <div class="game-icon">${game.icon}</div>
+          <h3>${game.name}</h3>
+          <p>${game.info}</p>
+        `;
+        list.appendChild(card);
+      });
+
+      buttons.forEach(button => {
+        button.classList.toggle(
+          "active",
+          button.dataset.category === category
+        );
+      });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        showGames(button.dataset.category);
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    showGames("PSP");
+  </script>
+</body>
+  </html>
+  
