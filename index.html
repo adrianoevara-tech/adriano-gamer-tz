@@ -326,6 +326,17 @@
   ☎ WHATSAPP
 </a>
   
+<script>
+fetch('./games.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Games zimepatikana:', data.games);
+  })
+  .catch(error => {
+    console.error('Imeshindikana kusoma games.json:', error);
+  });
+</script>
+  
 </body>
   </html>
   
